@@ -49,12 +49,17 @@
     <Compile Include="Assets/_Scripts/GlobalInterfaces/ILightControl.cs" />
     <Compile Include="Assets/_Scripts/GlobalInterfaces/IJumpable.cs" />
     <Compile Include="Assets/_Scripts/Player/PlayerRotatable.cs" />
+    <Compile Include="Assets/_Scripts/GlobalInterfaces/IShootable.cs" />
+    <Compile Include="Assets/_Scripts/Player/PlayerShootable.cs" />
+    <Compile Include="Assets/_Scripts/Weapons/WeaponChanger.cs" />
     <Compile Include="Assets/_Scripts/RotatableObjects/RotatableObject.cs" />
+    <Compile Include="Assets/_Scripts/Weapons/Ammunition.cs" />
     <Compile Include="Assets/_Scripts/GlobalInterfaces/IInteractable.cs" />
     <Compile Include="Assets/_Scripts/InterectableObjects/InteractableLightHandler.cs" />
     <Compile Include="Assets/_Scripts/Singleton/Singleton.cs" />
     <Compile Include="Assets/_Scripts/GlobalInterfaces/IRotatable.cs" />
     <Compile Include="Assets/_Scripts/GlobalInterfaces/IMovable.cs" />
+    <Compile Include="Assets/_Scripts/Weapons/Weapon.cs" />
     <Compile Include="Assets/_Scripts/UnityExtensions/UnityExtensions.cs" />
     <Compile Include="Assets/_Scripts/InterectableObjects/InteractableObject.cs" />
     <Compile Include="Assets/_Scripts/Player/PlayerInteractable.cs" />
@@ -716,14 +721,17 @@
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
       <HintPath>/Volumes/MAC-SSD-1 1/GIT2/ShooterDSW/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.PlasticSCM.Editor">
-      <HintPath>/Volumes/MAC-SSD-1 1/GIT2/ShooterDSW/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
+    <Reference Include="Unity.Burst.Editor">
+      <HintPath>/Volumes/MAC-SSD-1 1/GIT2/ShooterDSW/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst">
       <HintPath>/Volumes/MAC-SSD-1 1/GIT2/ShooterDSW/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Burst.Editor">
-      <HintPath>/Volumes/MAC-SSD-1 1/GIT2/ShooterDSW/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
+    <Reference Include="Unity.PlasticSCM.Editor">
+      <HintPath>/Volumes/MAC-SSD-1 1/GIT2/ShooterDSW/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ResourceManager">
+      <HintPath>/Volumes/MAC-SSD-1 1/GIT2/ShooterDSW/Library/ScriptAssemblies/Unity.ResourceManager.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Volumes/MAC-SSD-1 1/GIT2/ShooterDSW/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
@@ -734,6 +742,9 @@
     <Reference Include="Unity.ShaderGraph.Editor">
       <HintPath>/Volumes/MAC-SSD-1 1/GIT2/ShooterDSW/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.ScriptableBuildPipeline">
+      <HintPath>/Volumes/MAC-SSD-1 1/GIT2/ShooterDSW/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
       <HintPath>/Volumes/MAC-SSD-1 1/GIT2/ShooterDSW/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
@@ -743,17 +754,20 @@
     <Reference Include="Unity.VisualScripting.Core">
       <HintPath>/Volumes/MAC-SSD-1 1/GIT2/ShooterDSW/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>/Volumes/MAC-SSD-1 1/GIT2/ShooterDSW/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.VisualScripting.Core.Editor">
       <HintPath>/Volumes/MAC-SSD-1 1/GIT2/ShooterDSW/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>/Volumes/MAC-SSD-1 1/GIT2/ShooterDSW/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>/Volumes/MAC-SSD-1 1/GIT2/ShooterDSW/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor">
       <HintPath>/Volumes/MAC-SSD-1 1/GIT2/ShooterDSW/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualEffectGraph.Editor">
+      <HintPath>/Volumes/MAC-SSD-1 1/GIT2/ShooterDSW/Library/ScriptAssemblies/Unity.VisualEffectGraph.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow">
       <HintPath>/Volumes/MAC-SSD-1 1/GIT2/ShooterDSW/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll</HintPath>
@@ -763,9 +777,6 @@
     </Reference>
     <Reference Include="Unity.Mathematics.Editor">
       <HintPath>/Volumes/MAC-SSD-1 1/GIT2/ShooterDSW/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualEffectGraph.Editor">
-      <HintPath>/Volumes/MAC-SSD-1 1/GIT2/ShooterDSW/Library/ScriptAssemblies/Unity.VisualEffectGraph.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
       <HintPath>/Volumes/MAC-SSD-1 1/GIT2/ShooterDSW/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
@@ -779,14 +790,17 @@
     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
       <HintPath>/Volumes/MAC-SSD-1 1/GIT2/ShooterDSW/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
-      <HintPath>/Volumes/MAC-SSD-1 1/GIT2/ShooterDSW/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.RenderPipelines.HighDefinition.Config.Runtime">
       <HintPath>/Volumes/MAC-SSD-1 1/GIT2/ShooterDSW/Library/ScriptAssemblies/Unity.RenderPipelines.HighDefinition.Config.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
+      <HintPath>/Volumes/MAC-SSD-1 1/GIT2/ShooterDSW/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
       <HintPath>/Volumes/MAC-SSD-1 1/GIT2/ShooterDSW/Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+      <HintPath>/Volumes/MAC-SSD-1 1/GIT2/ShooterDSW/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor">
       <HintPath>/Volumes/MAC-SSD-1 1/GIT2/ShooterDSW/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
@@ -794,8 +808,8 @@
     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
       <HintPath>/Volumes/MAC-SSD-1 1/GIT2/ShooterDSW/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-      <HintPath>/Volumes/MAC-SSD-1 1/GIT2/ShooterDSW/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+    <Reference Include="Unity.Addressables.Editor">
+      <HintPath>/Volumes/MAC-SSD-1 1/GIT2/ShooterDSW/Library/ScriptAssemblies/Unity.Addressables.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State.Editor">
       <HintPath>/Volumes/MAC-SSD-1 1/GIT2/ShooterDSW/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll</HintPath>
@@ -818,8 +832,14 @@
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>/Volumes/MAC-SSD-1 1/GIT2/ShooterDSW/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.ScriptableBuildPipeline.Editor">
+      <HintPath>/Volumes/MAC-SSD-1 1/GIT2/ShooterDSW/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.RenderPipelines.HighDefinition.Runtime">
       <HintPath>/Volumes/MAC-SSD-1 1/GIT2/ShooterDSW/Library/ScriptAssemblies/Unity.RenderPipelines.HighDefinition.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Addressables">
+      <HintPath>/Volumes/MAC-SSD-1 1/GIT2/ShooterDSW/Library/ScriptAssemblies/Unity.Addressables.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.HighDefinition.Editor">
       <HintPath>/Volumes/MAC-SSD-1 1/GIT2/ShooterDSW/Library/ScriptAssemblies/Unity.RenderPipelines.HighDefinition.Editor.dll</HintPath>
@@ -829,6 +849,10 @@
     <ProjectReference Include="Sirenix.OdinInspector.Modules.UnityMathematics.csproj">
       <Project>{b7d247f4-3136-ccf3-34b4-a1ca5a521de8}</Project>
       <Name>Sirenix.OdinInspector.Modules.UnityMathematics</Name>
+    </ProjectReference>
+    <ProjectReference Include="Sirenix.OdinInspector.Modules.Unity.Addressables.csproj">
+      <Project>{30ff5248-6404-dd80-8afa-6c17f4032bac}</Project>
+      <Name>Sirenix.OdinInspector.Modules.Unity.Addressables</Name>
     </ProjectReference>
     <ProjectReference Include="VFolders.csproj">
       <Project>{69f5323b-0fd7-048d-a87c-906625e747ff}</Project>
