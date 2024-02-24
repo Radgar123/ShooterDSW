@@ -71,6 +71,7 @@
     <Compile Include="Assets\_Scripts\InterectableObjects\InteractableLightHandler.cs" />
     <Compile Include="Assets\_Scripts\Singleton\Singleton.cs" />
     <Compile Include="Assets\_Scripts\GlobalInterfaces\IRotatable.cs" />
+    <Compile Include="Assets\_Scripts\Player\PlayerManager.cs" />
     <Compile Include="Assets\_Scripts\GlobalInterfaces\IMovable.cs" />
     <Compile Include="Assets\_Scripts\UnityExtensions\UnityExtensions.cs" />
     <Compile Include="Assets\_Scripts\UI\MainMenuButtons.cs" />
