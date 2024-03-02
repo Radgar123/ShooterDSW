@@ -61,25 +61,33 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\_Scripts\UI\Options.cs" />
+    <Compile Include="Assets\_Scripts\UI\LevelManager.cs" />
     <Compile Include="Assets\_Scripts\Player\PlayerJump.cs" />
     <Compile Include="Assets\_Scripts\GlobalInterfaces\ILightControl.cs" />
     <Compile Include="Assets\_Scripts\GlobalInterfaces\IJumpable.cs" />
     <Compile Include="Assets\_Scripts\Player\PlayerRotatable.cs" />
+    <Compile Include="Assets\_Scripts\Player\HealthManager.cs" />
+    <Compile Include="Assets\_Scripts\Collectibles\HealthCollectible.cs" />
+    <Compile Include="Assets\_Scripts\Enemies\EnemyWorm.cs" />
     <Compile Include="Assets\_Scripts\RotatableObjects\RotatableObject.cs" />
+    <Compile Include="Assets\_Scripts\Collectibles\EnergyCollectible.cs" />
     <Compile Include="Assets\_Scripts\GlobalInterfaces\IInteractable.cs" />
     <Compile Include="Assets\_Scripts\UI\PauseMenu.cs" />
     <Compile Include="Assets\_Scripts\InterectableObjects\InteractableLightHandler.cs" />
+    <Compile Include="Assets\_Scripts\Enemies\GiveDamage.cs" />
     <Compile Include="Assets\_Scripts\Singleton\Singleton.cs" />
     <Compile Include="Assets\_Scripts\GlobalInterfaces\IRotatable.cs" />
-    <Compile Include="Assets\_Scripts\Player\PlayerManager.cs" />
     <Compile Include="Assets\_Scripts\GlobalInterfaces\IMovable.cs" />
     <Compile Include="Assets\_Scripts\UnityExtensions\UnityExtensions.cs" />
     <Compile Include="Assets\_Scripts\UI\MainMenuButtons.cs" />
     <Compile Include="Assets\_Scripts\InterectableObjects\InteractableObject.cs" />
     <Compile Include="Assets\_Scripts\Player\PlayerInteractable.cs" />
+    <Compile Include="Assets\_Scripts\Player\EnergyManager.cs" />
     <Compile Include="Assets\_Scripts\Player\PlayerController.cs" />
     <Compile Include="Assets\_Scripts\Player\PlayerMovement.cs" />
+    <Compile Include="Assets\_Scripts\UI\GameOverMenu.cs" />
     <Compile Include="Assets\_Scripts\Player\PlayerInputHandler.cs" />
+    <Compile Include="Assets\_Scripts\Spawner\Spawner.cs" />
     <Compile Include="Assets\_Scripts\RotatableObjects\RotatableByInputs.cs" />
   </ItemGroup>
   <ItemGroup>
