@@ -13,6 +13,7 @@ namespace _Scripts.Player
         
         [HideInInspector] public UnityEvent InteractEvent;
         [HideInInspector] public UnityEvent JumpEvent;
+        [HideInInspector] public UnityEvent ShootEvent;
 
         public void OnMove(InputAction.CallbackContext context)
         {
@@ -42,6 +43,14 @@ namespace _Scripts.Player
                 InteractInput = true;
                 StartCoroutine(ResetInteractButton());
                 InteractEvent?.Invoke();
+            }
+        }
+
+        public void OnShoot(InputAction.CallbackContext context)
+        {
+            if (context.started)
+            {
+                ShootEvent?.Invoke();
             }
         }
 
