@@ -41,22 +41,22 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.xml" />
-    <None Include="Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.xml" />
-    <None Include="Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.xml" />
-    <None Include="Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.xml" />
-    <None Include="Assets/Plugins/Sirenix/Readme.txt" />
-    <None Include="Assets/Plugins/Sirenix/Assemblies/link.xml" />
-    <None Include="Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.xml" />
-    <None Include="Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.xml" />
+    <None Include="Assets\Plugins\Sirenix\Assemblies\Sirenix.Serialization.Config.xml" />
+    <None Include="Assets\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Editor.xml" />
+    <None Include="Assets\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Attributes.xml" />
+    <None Include="Assets\Plugins\Sirenix\Assemblies\Sirenix.Utilities.xml" />
+    <None Include="Assets\Plugins\Sirenix\Readme.txt" />
+    <None Include="Assets\Plugins\Sirenix\Assemblies\link.xml" />
+    <None Include="Assets\Plugins\Sirenix\Assemblies\Sirenix.Utilities.Editor.xml" />
+    <None Include="Assets\Plugins\Sirenix\Assemblies\Sirenix.Serialization.xml" />
     <Reference Include="UnityEngine">
-      <HintPath>/Applications/Unity/Hub/Editor/2022.3.17f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
+      <HintPath>D:\Unity-Hub\2022.3.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>/Applications/Unity/Hub/Editor/2022.3.17f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>D:\Unity-Hub\2022.3.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>/Applications/Unity/Hub/Editor/2022.3.17f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.dll</HintPath>
+      <HintPath>D:\Unity-Hub\2022.3.17f1\Editor\Data\Managed\UnityEngine\UnityEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
