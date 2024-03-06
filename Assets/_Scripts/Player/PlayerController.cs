@@ -38,6 +38,7 @@ namespace _Scripts.Player
         [SerializeField] private WeaponChanger _weaponChanger;
         private Weapon _currentWeapon;
         
+        [Header("Shoot Param")]
         [SerializeField] private Ammunition _ammunition;
         [SerializeField] private float _shootSpeed;
         [SerializeField] private float _shootDelay;

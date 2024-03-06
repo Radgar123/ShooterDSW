@@ -156,8 +156,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60ca5b0c353694169aeaac5f11105e76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shootSpeed: 1
-  shootDelay: 1
   rigidbody: {fileID: 320882960}
 --- !u!54 &320882960
 Rigidbody:
@@ -568,6 +566,18 @@ PrefabInstance:
       propertyPath: _shootSpeed
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 5296270986747103194, guid: f18664688cc364d4da26ff5c4661412f, type: 3}
+      propertyPath: _playerAnimatro
+      value: 
+      objectReference: {fileID: 2099446448}
+    - target: {fileID: 5296270986747103194, guid: f18664688cc364d4da26ff5c4661412f, type: 3}
+      propertyPath: _weaponChanger._Weapons.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5296270986747103194, guid: f18664688cc364d4da26ff5c4661412f, type: 3}
+      propertyPath: _weaponChanger._WeaponParams.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6140520206512642151, guid: f18664688cc364d4da26ff5c4661412f, type: 3}
       propertyPath: m_ActionEvents.Array.size
       value: 14
@@ -835,6 +845,11 @@ MonoBehaviour:
       enableFptlForForwardOpaque: 0
       enableBigTilePrepass: 0
       isFptlEnabled: 0
+--- !u!95 &2099446448 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 335236255144797002, guid: f18664688cc364d4da26ff5c4661412f, type: 3}
+  m_PrefabInstance: {fileID: 1340908644}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2099446451 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6459067355613231113, guid: f18664688cc364d4da26ff5c4661412f, type: 3}
