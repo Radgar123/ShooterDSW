@@ -70,14 +70,17 @@
     <Compile Include="Assets\_Scripts\GlobalInterfaces\IMovable.cs" />
     <Compile Include="Assets\_Scripts\UnityExtensions\UnityExtensions.cs" />
     <Compile Include="Assets\_Scripts\UI\MainMenuButtons.cs" />
+    <Compile Include="Assets\_Scripts\Building\BuildingItem.cs" />
     <Compile Include="Assets\_Scripts\InterectableObjects\InteractableObject.cs" />
     <Compile Include="Assets\_Scripts\Player\PlayerInteractable.cs" />
     <Compile Include="Assets\_Scripts\Player\EnergyManager.cs" />
     <Compile Include="Assets\_Scripts\Player\PlayerController.cs" />
     <Compile Include="Assets\_Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\_Scripts\UI\GameOverMenu.cs" />
+    <Compile Include="Assets\_Scripts\GlobalInterfaces\IBuildingable.cs" />
     <Compile Include="Assets\_Scripts\Player\PlayerInputHandler.cs" />
     <Compile Include="Assets\_Scripts\Spawner\Spawner.cs" />
+    <Compile Include="Assets\_Scripts\Building\BuildingParam.cs" />
     <Compile Include="Assets\_Scripts\RotatableObjects\RotatableByInputs.cs" />
     <None Include="Library\PackageCache\com.unity.settings-manager@2.0.1\package.json" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

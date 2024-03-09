@@ -54,6 +54,24 @@ namespace _Scripts.Player
             }
         }
 
+        public void OnStartBuild(InputAction.CallbackContext context)
+        {
+            if (context.started)
+            {
+                
+            }
+
+            if (context.performed)
+            {
+                
+            }
+
+            if (context.canceled)
+            {
+                
+            }
+        }
+
         private IEnumerator ResetInteractButton()
         {
             yield return new WaitForSeconds(1f);
