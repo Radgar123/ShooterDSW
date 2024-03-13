@@ -412,11 +412,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 589622697}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2f5330c93bb7b14a8408f7057e6bae9, type: 3}
+  m_Script: {fileID: 11500000, guid: c0c854ba6f46dff4f8866458a95466be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundEffectsText: {fileID: 0}
-  musicText: {fileID: 0}
 --- !u!1 &707787068
 GameObject:
   m_ObjectHideFlags: 0
@@ -852,7 +850,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 589622700}
-        m_TargetAssemblyTypeName: Options, Assembly-CSharp
+        m_TargetAssemblyTypeName: BackToMenu, Assembly-CSharp
         m_MethodName: BackToMainMenu
         m_Mode: 1
         m_Arguments:

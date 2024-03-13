@@ -13,6 +13,7 @@ public class HealthCollectible : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             other.gameObject.GetComponent<HealthManager>().Heal(healthRestore);
+            Destroy(gameObject);
         }
     }
 }
