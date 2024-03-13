@@ -15,7 +15,10 @@ public class HealthManager : MonoBehaviour
     public GameObject healthFillObject;
 
     public GameObject deathMenu;
-    
+
+    public ParticleSystem particle;
+
+    public GameObject playerAnchor;
 
     void Start()
     {
@@ -24,7 +27,11 @@ public class HealthManager : MonoBehaviour
         healthText.text = currentHealth.ToString();
         UpdateHealthUI();
     }
-   
+
+
+  
+  
+
 
     public void TakeDamage(int damageAmount)
     {
@@ -33,9 +40,12 @@ public class HealthManager : MonoBehaviour
         {
             currentHealth = 0;
             healthFillObject.SetActive(false);
-            Invoke("ShowDeathMenu", 2);
+            playerAnchor.gameObject.SetActive(false);
+            Invoke("ShowDeathMenu", 0.5f);
           
         }
+
+        Instantiate(particle, transform.position, transform.rotation);
         UpdateHealthUI();
     }
 
@@ -63,8 +73,12 @@ public class HealthManager : MonoBehaviour
     {
         deathMenu.gameObject.SetActive(true);
     }
-    
 
-   
+
+    public void OnCollisionEnter(Collision collision)
+    {
+    }
+
+
 }
 

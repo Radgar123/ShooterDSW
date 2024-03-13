@@ -10,10 +10,25 @@ public class Options : MonoBehaviour
 
     public TextMeshProUGUI soundEffectsText, musicText;
     private bool soundON = true, musicON = true;
+
+
+
+    private void Awake()
+    {
+     
+    }
     // Start is called before the first frame update
     void Start()
     {
-        
+        if(BackgroundMusic.instance.audioSource.volume == 0)
+        {
+            musicText.text = "OFF";
+
+        }
+        else
+        {
+            musicText.text = "ON";
+        }
     }
 
     // Update is called once per frame
@@ -34,12 +49,14 @@ public class Options : MonoBehaviour
 
         if (soundON)
         {
+           
             soundEffectsText.text = "OFF";
             Debug.Log("SoundEffectsOFF");
             soundON = false;
         }
         else
         {
+         
             soundEffectsText.text = "ON";
             Debug.Log("SoundEffectsON");
             soundON = true;
@@ -51,6 +68,7 @@ public class Options : MonoBehaviour
     {
         if (musicON)
         {
+            BackgroundMusic.instance.audioSource.volume = 0;
             musicText.text = "OFF";
             Debug.Log("MusicON");
 
@@ -60,6 +78,7 @@ public class Options : MonoBehaviour
 
         else
         {
+            BackgroundMusic.instance.audioSource.volume = 0.2f;
             musicText.text = "ON";
             Debug.Log("MusicOff");
                 musicON = true;

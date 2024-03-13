@@ -13,6 +13,7 @@ public class EnergyCollectible : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             other.gameObject.GetComponent<HealthManager>().Heal(energyRestore);
+            Destroy(gameObject);
         }
     }
 }

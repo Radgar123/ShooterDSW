@@ -20,12 +20,14 @@ public class GameOverMenu : MonoBehaviour
 
     public void TryAgain()
     {
+        Time.timeScale = 1;
         Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name);
     }
 
     public void MainMenu()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(0);
     }
 }
