@@ -2,8 +2,10 @@
 
 namespace _Scripts.Building
 {
-    public class BuildingItem : MonoBehaviour
+    [System.Serializable]
+    public struct BuildingItem
     {
-        
+        public GameObject exampleToBuild;
+        public GameObject itemToBuild;
     }
 }

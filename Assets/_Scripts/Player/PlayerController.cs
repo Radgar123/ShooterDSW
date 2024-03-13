@@ -1,4 +1,5 @@
 using System;
+using _Scripts.Building;
 using _Scripts.GlobalInterfaces;
 using _Scripts.InterectableObjects;
 using _Scripts.RotatableObjects;
@@ -43,6 +44,9 @@ namespace _Scripts.Player
         [SerializeField] private float _shootSpeed;
         [SerializeField] private float _shootDelay;
         [SerializeField] private Transform _shootPivot;
+
+        [Header("Building Param")] [SerializeField]
+        private BuildingParam _buildingParam;
 
         public Transform _currentLightTransform;
         public bool isInteract 
