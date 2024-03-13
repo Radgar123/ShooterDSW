@@ -14,6 +14,7 @@ namespace _Scripts.Player
         [HideInInspector] public UnityEvent InteractEvent;
         [HideInInspector] public UnityEvent JumpEvent;
         [HideInInspector] public UnityEvent ShootEvent;
+        [HideInInspector] public UnityEvent OnOpenBuildMenu, OnBuild;
 
         public void OnMove(InputAction.CallbackContext context)
         {
@@ -58,18 +59,13 @@ namespace _Scripts.Player
         {
             if (context.started)
             {
-                
+                OnBuild?.Invoke();
             }
+        }
 
-            if (context.performed)
-            {
-                
-            }
-
-            if (context.canceled)
-            {
-                
-            }
+        public void OnBuildMenu(InputAction.CallbackContext context)
+        {
+            OnOpenBuildMenu?.Invoke();
         }
 
         private IEnumerator ResetInteractButton()

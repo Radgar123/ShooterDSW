@@ -1,18 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using _Scripts.Building;
 using UnityEngine;
 
-public class IBuildingable : MonoBehaviour
+public interface IBuildingable
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public void Build(BuildingItem buildingItem);
 }
