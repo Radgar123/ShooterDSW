@@ -5,8 +5,32 @@ using UnityEngine;
 
 public class PlayerBuilding : MonoBehaviour, IBuildingable
 {
-    public void Build(BuildingItem buildingItem)
+    public bool toBuild = false;
+    
+    public void Build(BuildingItem buildingItem, Transform buildPivot)
     {
-        throw new System.NotImplementedException();
+        /*if (toBuild)
+        {
+            GameObject build = Instantiate(buildingItem.itemToBuild, buildPivot);
+        }*/
+        
+        GameObject build = Instantiate(buildingItem.itemToBuild, buildPivot);
+        build.transform.SetParent(null);
+    }
+
+    public void ViewOnPlayerBuild(BuildingItem buildingItem, Transform buildPivot)
+    {
+        toBuild = true;
+        if (!toBuild)
+        {
+            buildingItem.exampleToBuild.SetActive(true);
+            toBuild = true;
+        }
+        else
+        {
+            buildingItem.exampleToBuild.SetActive(false);
+            toBuild = false;
+        }
+        
     }
 }

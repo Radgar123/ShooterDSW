@@ -5,5 +5,6 @@ using UnityEngine;
 
 public interface IBuildingable
 {
-    public void Build(BuildingItem buildingItem);
+    public void Build(BuildingItem buildingItem, Transform buildPivot);
+    public void ViewOnPlayerBuild(BuildingItem buildingItem, Transform buildPivot);
 }

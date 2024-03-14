@@ -65,6 +65,10 @@ namespace _Scripts.Player
 
         public void OnBuildMenu(InputAction.CallbackContext context)
         {
+            /*if (context.started)
+            {
+                
+            }*/
             OnOpenBuildMenu?.Invoke();
         }
 

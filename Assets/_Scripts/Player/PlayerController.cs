@@ -24,8 +24,10 @@ namespace _Scripts.Player
         private IJumpable _jumpable;
         private IInteractable _interactable;
         private IShootable _playerShootable;
+        private IBuildingable _buildingable;
         
         private PlayerInputHandler _playerInputHandler;
+        private EnergyManager _energyManager;
         
         [SerializeField] private ParticleSystem _particleSystem;
         [SerializeField] private Rigidbody _rigidbody;
@@ -45,7 +47,10 @@ namespace _Scripts.Player
         [SerializeField] private float _shootDelay;
         [SerializeField] private Transform _shootPivot;
 
-        [Header("Building Param")] [SerializeField]
+        [Header("Building Param")] 
+        [SerializeField]
+        private Transform _buildPivot;
+        [SerializeField]
         private BuildingParam _buildingParam;
 
         public Transform _currentLightTransform;
@@ -79,8 +84,11 @@ namespace _Scripts.Player
             _jumpable = GetComponent<IJumpable>();
             _interactable = GetComponent<IInteractable>();
             _playerShootable = GetComponent<IShootable>();
+            _buildingable = GetComponent<IBuildingable>();
             
             _playerInputHandler = GetComponent<PlayerInputHandler>();
+            _energyManager = GetComponent<EnergyManager>();
+
         }
 
         private void Start()
@@ -88,7 +96,11 @@ namespace _Scripts.Player
             _playerInputHandler.JumpEvent.AddListener(() => _jumpable.Jump(jumpForce,isGrounded,_rigidbody));
             _playerInputHandler.ShootEvent.
                 AddListener(() => _playerShootable.Shoot(_ammunition,_shootSpeed,_shootPivot));
-            //_playerShootable.
+            _playerInputHandler.OnBuild.AddListener(()=>_buildingable.
+                Build(_buildingParam.buildingItems[0],_buildPivot));
+            _playerInputHandler.OnBuild.AddListener(()=> _energyManager.UseEnergy(20));
+            _playerInputHandler.OnOpenBuildMenu.
+                AddListener((() => _buildingable.ViewOnPlayerBuild(_buildingParam.buildingItems[0],_buildPivot)));
         }
 
         private void Update()
