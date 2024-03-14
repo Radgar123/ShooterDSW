@@ -1,37 +1,42 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VFolders", "VFolders.csproj", "{69f5323b-0fd7-048d-a87c-906625e747ff}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VFolders", "VFolders.csproj", "{69F5323B-0FD7-048D-A87C-906625E747FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{5c8e9dd4-bf91-e1a7-dacb-e60696391c9c}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{D49D8E5C-91BF-A7E1-DACB-E60696391C9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sirenix.OdinInspector.Modules.Unity.Addressables", "Sirenix.OdinInspector.Modules.Unity.Addressables.csproj", "{30ff5248-6404-dd80-8afa-6c17f4032bac}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sirenix.OdinInspector.Modules.Unity.Addressables", "Sirenix.OdinInspector.Modules.Unity.Addressables.csproj", "{4852FF30-0464-80DD-8AFA-6C17F4032BAC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sirenix.OdinInspector.Modules.UnityMathematics", "Sirenix.OdinInspector.Modules.UnityMathematics.csproj", "{b7d247f4-3136-ccf3-34b4-a1ca5a521de8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sirenix.OdinInspector.Modules.UnityMathematics", "Sirenix.OdinInspector.Modules.UnityMathematics.csproj", "{B7D247F4-3136-CCF3-34B4-A1CA5A521DE8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{778c7551-9c6e-2728-abb7-b60046b71289}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{778C7551-9C6E-2728-ABB7-B60046B71289}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor-firstpass", "Assembly-CSharp-Editor-firstpass.csproj", "{74d77dce-eccf-5706-d00d-841841354bbf}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor-firstpass", "Assembly-CSharp-Editor-firstpass.csproj", "{74D77DCE-ECCF-5706-D00D-841841354BBF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{69f5323b-0fd7-048d-a87c-906625e747ff}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{69f5323b-0fd7-048d-a87c-906625e747ff}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5c8e9dd4-bf91-e1a7-dacb-e60696391c9c}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5c8e9dd4-bf91-e1a7-dacb-e60696391c9c}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{30ff5248-6404-dd80-8afa-6c17f4032bac}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{30ff5248-6404-dd80-8afa-6c17f4032bac}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{b7d247f4-3136-ccf3-34b4-a1ca5a521de8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{b7d247f4-3136-ccf3-34b4-a1ca5a521de8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{778c7551-9c6e-2728-abb7-b60046b71289}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{778c7551-9c6e-2728-abb7-b60046b71289}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{74d77dce-eccf-5706-d00d-841841354bbf}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{74d77dce-eccf-5706-d00d-841841354bbf}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69F5323B-0FD7-048D-A87C-906625E747FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69F5323B-0FD7-048D-A87C-906625E747FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D49D8E5C-91BF-A7E1-DACB-E60696391C9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D49D8E5C-91BF-A7E1-DACB-E60696391C9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4852FF30-0464-80DD-8AFA-6C17F4032BAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4852FF30-0464-80DD-8AFA-6C17F4032BAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7D247F4-3136-CCF3-34B4-A1CA5A521DE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7D247F4-3136-CCF3-34B4-A1CA5A521DE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{778C7551-9C6E-2728-ABB7-B60046B71289}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{778C7551-9C6E-2728-ABB7-B60046B71289}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74D77DCE-ECCF-5706-D00D-841841354BBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74D77DCE-ECCF-5706-D00D-841841354BBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4830235E-FC25-4853-B5C6-3C715BEDB76D}
 	EndGlobalSection
 EndGlobal

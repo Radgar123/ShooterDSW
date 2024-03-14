@@ -9,7 +9,7 @@ public class EnergyManager : MonoBehaviour
     
     public int maxEnergy = 100;
     
-    private int currentEnergy;
+    public int currentEnergy;
    
     public TextMeshProUGUI energyText;
    
@@ -30,7 +30,7 @@ public class EnergyManager : MonoBehaviour
         if (currentEnergy <= 0)
         {
             currentEnergy = 0;
-            energyFillObject.SetActive(false);
+            
         }
         UpdateEnergyUI();
     }

@@ -6,6 +6,7 @@ using UnityEngine;
 public class PlayerBuilding : MonoBehaviour, IBuildingable
 {
     public bool toBuild = false;
+    public EnergyManager energyManager;
     
     public void Build(BuildingItem buildingItem, Transform buildPivot)
     {
@@ -14,8 +15,13 @@ public class PlayerBuilding : MonoBehaviour, IBuildingable
             GameObject build = Instantiate(buildingItem.itemToBuild, buildPivot);
         }*/
         
-        GameObject build = Instantiate(buildingItem.itemToBuild, buildPivot);
-        build.transform.SetParent(null);
+        if(energyManager.currentEnergy >= 20)
+        {
+            GameObject build = Instantiate(buildingItem.itemToBuild, buildPivot);
+            build.transform.SetParent(null);
+          
+        }
+     
     }
 
     public void ViewOnPlayerBuild(BuildingItem buildingItem, Transform buildPivot)
